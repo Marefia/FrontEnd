@@ -1,7 +1,10 @@
-import Account from '../../models/others/Account';
-import {SignInViews} from '../../views/AccountSignInViews';
-import {SignUpViews} from '../../views/AccountSignUpView';
+import Account from '../../models/others/Account.js';
+import {SignInViews} from '../../views/AccountSignInViews.js';
+import {SignUpViews} from '../../views/AccountSignUpView.js';
+import {signInButton} from "../../views/AccountSignInViews";
 
+SignUpViews.onClick();
+signInButton.onclick = ()=>{console.log('From the controller file')};
 SignInViews.onSignInButtonClicked = () => {
     console.log('SignInButtonClicked');
 
